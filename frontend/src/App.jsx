@@ -129,7 +129,7 @@ export default function App() {
         <header className="chat-header">
           <div className="header-title">
             <Bot className="bot-icon animate-pulse" size={28} />
-            <h1>ArtiGen <span>Blog AI</span></h1>
+            <h1>Blog <span>AI</span></h1>
           </div>
           <div className="header-controls">
             <div className="dropdown">
