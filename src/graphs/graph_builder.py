@@ -1,5 +1,5 @@
 from langgraph.graph import StateGraph, START, END
-from src.llms.groqllm import GroqLLM
+# from src.llms.groqllm import GroqLLM
 from src.states.blogstate import BlogState
 from src.nodes.blog_node import BlogNode
 
@@ -69,7 +69,8 @@ class GraphBuilder:
     
 
 ## Below code is for the langsmith langgraph studio
-llm=GroqLLM().get_llm()
+# llm=GroqLLM().get_llm()
+llm=OpenAILLM().get_llm()
 
 ## get the graph
 graph_builder=GraphBuilder(llm)
