@@ -37,7 +37,7 @@ export default function App() {
     abortControllerRef.current = controller;
 
     try {
-      const response = await fetch('http://localhost:8000/blogs', {
+      const response = await fetch('https://blog-generation-langraph-ai-8irn.vercel.app/blogs', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ topic: input, language: language.toLowerCase() }),
